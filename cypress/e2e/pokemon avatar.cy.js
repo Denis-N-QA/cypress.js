@@ -1,7 +1,7 @@
 describe('Покупка аватара', function () {
    it('e2e тест на покупку нового аватара для тренера', function () {
       cy.visit('https://pokemonbattle.me/');
-      cy.get(':nth-child(1) > .auth__input').type('den-nigmatylin@mail.ru');
+      cy.get(':nth-child(1) > .auth__input').type('denru');
       cy.get('#password').type('Leto2023)');
       cy.get('.auth__button').click();
       cy.get('.header__btns > [href="/shop"]').click();
